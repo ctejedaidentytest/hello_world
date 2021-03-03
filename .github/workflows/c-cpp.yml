@@ -16,6 +16,4 @@ jobs:
     - name: compile
       run: g++ hello.cpp
     - name: ./a.out
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+      run: ./a.out
