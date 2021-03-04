@@ -2,18 +2,20 @@ name: C/C++ CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ '**' ]
   pull_request:
-    branches: [ main ]
+    branches: [ '**' ]
 
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: Ubuntu-20.04
 
     steps:
-    - uses: actions/checkout@v2
-    - name: compile
-      run: g++ hello.cpp
-    - name: ./a.out
-      run: ./a.out
+#- uses: actions/checkout@v2
+    - name: see around
+      run: ls; pwd; set
+#    - name: compile
+#      run: g++ hello.cpp
+#    - name: ./a.out
+#      run: ./a.out
