@@ -14,11 +14,7 @@ jobs:
     steps:
 #- uses: actions/checkout@v2
     - name: see around
-      run: ls; pwd
-    - name: git dearchive
-      run: git archive --remote=https://github.com/ctejedaidentytest/hello_world --format=tar $GITHUB_SHA  hello.cpp .github | tar xf -
-    - name: see around more
-      run: set; ls -aR
+      run: ls; pwd; set
 #    - name: compile
 #      run: g++ hello.cpp
 #    - name: ./a.out
